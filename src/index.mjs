@@ -1305,9 +1305,7 @@ class MCBot {
                         case 'basehunt':
                             this.bot.chat(`/msg ${username} basehunt - Go basehunting`);
                             break;
-                        case 'pearl':
-                            this.bot.chat(`/msg ${username} pearl - Activate a stasis chamber [Only for Stasis Chamber Owners]`);
-                            break;
+=
                         default:
                             this.bot.chat(`/msg ${username} Unknown command: ${command}`);
                             break;
