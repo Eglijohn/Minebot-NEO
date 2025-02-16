@@ -68,10 +68,10 @@ node src/index.mjs
 - `!pos`: Displays the bot's current position.
 - `!drop <item_name> <amount>`: Drops the specified amount of the specified item.
 - `!rejoin`: Rejoins the server.
-- `!stop`: Stops the bot's current action.
-- `!tp <to|axis> <target|offset> <fly>`: Teleports the bot to a target or offset.
-- `!tfly`: Toggles flight mode.
-- `!attack <player>`: Attacks the specified player.
+- `!stop`: Stops the current pathfinder goal.
+- `!tp <to|axis> <target|offset> <fly>`: Teleports the bot to a target or offset. Max 10 blocks or 16 blocks with fly.
+- `!tfly <fly>`: Toggles flight mode.
+- `!attack <player> <mace> <maceattacks>`: Attacks the specified player. Mace for macekill, number for amount of maceattacks. Range up to 10 blocks, normal Attack crits.
 - `!scs <sneak, jump, sprint, left, right, forward, back> <true, false>`: Sets the bot's control state.
 - `!range`: See players in the bots render distance.
 - `!equip <item_name> <slot>`: Equips the specified item in the specified slot (hand, head, chest, legs, feet, off-hand).
@@ -79,21 +79,19 @@ node src/index.mjs
 
 ### Chat Commands
 - `!help`: Displays help information.
-- `!cmd`: Lists all available commands or gets info about a specific command.
-- `!follow`: Makes the bot follow you (trusted users only).
-- `!stopfollow`: Makes the bot stop following you (trusted users only).
-- `!quit`: Makes the bot quit (trusted users only).
-- `!say <message>`: Makes the bot say a message (trusted users only).
+- `!cmd <command>`: Lists all available commands or gets info about a specific command.
+- `!follow`: Makes the bot follow you (owner only).
+- `!stopfollow`: Makes the bot stop following you (owner only).
+- `!quit`: Makes the bot quit (owner only).
+- `!say <message>`: Makes the bot say a message (owner only).
 - `!players`: Lists online players.
-- `!pos`: Shows the bot's current position (trusted users only).
-- `!goto <x> <y> <z>`: Makes the bot go to specified coordinates (trusted users only).
-- `!tp <to|axis> <target|offset> <fly>`: Teleports the bot to a target or offset (trusted users only).
-- `!drop <item_name> <amount>`: Drops specified item (trusted users only).
-- `!attack <target> <mace> <attacks>`: Attacks a target (trusted users only).
-- `!equip <item_name> <slot>`: Equips an item (trusted users only).
-- `!range`: Lists players in range (trusted users only).
-- `!scs <'forward', 'back', 'left', 'right', 'jump', 'sprint', 'sneak'> <true/false>`: Sets control state (trusted users only).
-- `!basehunt`: Goes basehunting.
-- `!pearl`: Activates a stasis chamber (only for stasis chamber owners).
+- `!pos`: Shows the bot's current position (owner only).
+- `!goto <x> <y> <z>`: Makes the bot go to specified coordinates (owner only).
+- `!tp <to|axis> <target|offset> <fly>`: Teleports the bot to a target or offset (owner only).
+- `!drop <item_name> <amount>`: Drops specified item (owner only).
+- `!attack <target> <mace> <attacks>`: Attacks a target (owner only).
+- `!equip <item_name> <slot>`: Equips an item (owner only).
+- `!range`: Lists players in range (owner only).
+- `!scs <'forward', 'back', 'left', 'right', 'jump', 'sprint', 'sneak'> <true/false>`: Sets control state (owner only).
 
-**I assume no responsibility for any damage caused by this Bot**
+**I assume no responsibility for any damage caused by this Bot such as bans on Minecraft Servers**
